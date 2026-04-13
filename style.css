@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; 
+    color: #333;
+}
+
+header, footer {
+    background-color: #ffffff; 
+    color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    border-bottom: 1px solid #e9ecef;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa; 
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #495057 !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #007bff !important; 
+    background-color: #e9ecef;
+    text-decoration: none !important;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50; 
+    font-weight: 700;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.course-table thead tr {
+    background-color: #ffffff; 
+    color: #2c3e50;
+    border-bottom: 3px solid #007bff; 
+}
+
+.course-table th, .course-table td {
+    padding: 15px;
+    border: 1px solid #e9ecef; 
+    text-align: center;
+}
+
+.course-table tbody tr:hover {
+    background-color: #f8f9fa; 
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    text-align: left;
+    border: 1px solid #e9ecef;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+}
+
+.submit-btn {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; 
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .course-table {
+        display: block;
+        overflow-x: auto;
+        border-radius: 8px;
+    }
+    
+    main {
+        padding: 20px 15px;
+    }
+}

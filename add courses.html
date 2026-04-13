@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Course</title>
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body>
+    <header>
+        <h1>personal course organizer</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="courses.html">my courses</a>
+                </li>
+                <li>
+                    <a href="add-courses.html">add course</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <h2>add a new course</h2>
+            <form>
+                <div class="form-group">
+                    <label for="courseName">courseName:</label>
+                    <input type="text" id="courseName" name="courseName" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructor">instructor:</label>
+                    <input type="text" id="instructor" name="instructor" required>
+                </div>
+                <div class="form-group">
+                    <label for="hours">credit hours:</label>
+                    <input type="number" id="hours" name="hours" min="1" max="5">
+                </div>
+                <div class="form-group">
+                    <label for="notes">notes:</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">add course</button>
+    
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>designed by mostafa mohamed 2026-personal course organizer</p>
+    </footer>
+</body>
+
+
+    
+</body>
+</html>
